@@ -165,13 +165,7 @@ def data_update_file_creation(xl_erisite, xl_omni, xl_fc, xl_vendor):
                                     df_change.iloc[omni_x, omni_y + 1] = curr_val
 
                         except KeyError:
-                            
                             pass
-                            #if prev_ID != v:
-
-                                #changes_log.append({"ID PMTS": v, "Coluna Atualizada": '', "Valor Anterior": '', "Valor Novo": '', "Status ID": 'Novo'})
-                                #num_change += 1
-                                #prev_ID == v
 
                         except ValueError:
                             pass
@@ -308,7 +302,7 @@ def program():
 
         if user_option == 'S':
             data_update_file_creation(xl_erisite_file, xl_omni_file, xl_fc_file, xl_vendor_file)
-            print('\nObrigado pela preferência, seu tocha!'.center(90, ' '))
+            print('\nObrigado pelo aguardo!'.center(90, ' '))
             time.sleep(5)
             break
 
